@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {Controlcount} from './components/counterComponent/ControlCount'
 import {DisplayCount} from './components/counterComponent/DisplayCount'
