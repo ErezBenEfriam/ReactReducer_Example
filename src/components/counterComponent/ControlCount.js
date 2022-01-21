@@ -4,7 +4,10 @@ import { addCount } from "../../store-management/actions/CounterAction"
 import { customCount } from "../../store-management/actions/CounterAction"
 export const Controlcount = () => {
 
+    //for using our Action that we have created in  store-management/actions
     const dispath = useDispatch();
+
+    //change the state of the varible:
     const changeCount = (number) => {
         dispath(addCount(number))
     }
@@ -12,6 +15,7 @@ export const Controlcount = () => {
         if(isNaN(Number(number)))return; 
        dispath(customCount(Number(number)))
     }
+    
 
     return (
         <div>
